@@ -4,7 +4,7 @@
   "description": "Vocabularify - improve your vocabulary by doing nothing",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development electronmon .",
+    "start": "cross-env NODE_ENV=development electronmon .",
     "build": "electron-builder",
     "build:win": "electron-builder --win",
     "test": "vitest run",
@@ -89,6 +89,7 @@
     "node": ">=22.12.0"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "electron": "^42.4.0",
     "electron-builder": "^26.15.3",
     "electronmon": "^2.0.4",
